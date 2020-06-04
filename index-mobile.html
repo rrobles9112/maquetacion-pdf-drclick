@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.css" />
+    <title>Pdf DrClick</title>
+    <style type="text/css">
+      .table > thead > tr > th,
+      .table > tbody > tr > th,
+      .table > tfoot > tr > th,
+      .table > thead > tr > td,
+      .table > tbody > tr > td,
+      .table > tfoot > tr > td {
+        padding: 0px;
+        line-height: 1.42857143;
+        vertical-align: top;
+        border-top: none;
+      }
+
+      .img-qr {
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+      }
+
+      .tabla-datos-receta > thead > tr > th{
+        color: rgb(0, 96, 255);
+      }
+
+      .table-fecha > thead > tr > th,
+      .table-fecha > tbody > tr > th,
+      .table-fecha > tfoot > tr > th,
+      .table-fecha > thead > tr > td,
+      .table-fecha > tbody > tr > td,
+      .table-fecha > tfoot > tr > td {
+        border-top: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+      }
+
+      .logo {
+        width: 378px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .tabla-datos-paciente{
+        margin-top: 30px;
+      }
+      .iso_logo {
+        float: left;
+        width: 100px;
+      }
+
+      .iso_logo > img,
+      .iso_texto > img {
+        height: 75px;
+      }
+
+      .iso_texto {
+        float: left;
+        width: 120px;
+      }
+      .tabla-ficha{
+        width: 100%;
+      }
+      .tabla-ficha > thead > tr > th{
+        width: 20%;
+      }
+      .tabla-ficha > thead > tr > th p{
+          font-weight: 100;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <table
+      class="table table-responsive"
+      style="border: none;"
+      cellspacing="0"
+      cellpadding="0"
+    >
+      <tr>
+        <td width="100%">
+          <img
+            src="images/barra_superior.png"
+            style="width: 100%;"
+            alt="Barra Superior"
+          />
+        </td>
+      </tr>
+    </table>
+    <div class="container">
+      <table class="table table-responsive">
+        <tbody>
+          <tr>
+
+            <td style="width: 100%;" width="100%">
+              <td></td>
+              <div class="logo">
+                <div class="iso_logo">
+                  <img
+                    src="images/logo_one.png"
+                    alt="DrClick"
+                    class="isotipo"
+                  />
+                </div>
+                <div class="iso_texto">
+                  <img src="images/logo_dos.png" alt="DrClick" />
+                </div>
+              </div>
+              <table class="table table-fecha" style="margin-bottom: 0px;">
+                <tbody>
+                  <tr>
+                    <td align="left">
+                      <p style="margin: 10px 0px 10px 10px;"><b>FECHA</b></p>
+                    </td>
+                    <td align="right">
+                      <p style="margin: 10px 8px 10px 0px;">03-Junio-2020</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td width="100%">
+              <img src="images/logo_qr.png" class="img-qr" alt="DrClick" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="tabla-ficha">
+        <thead>
+          <tr>
+            <th>
+              <p class="text-center">
+                <span>Centro</span><br></br>
+                <span>Telemed</span><br>
+              </p>
+            </th>
+            <th>
+              <p class="text-center">
+                <span>RCN</span><br></br>
+                <span>12-2321-12-2345</span><br>
+              </p>
+            </th>
+            <th>
+              <p class="text-center">
+                <span>Habilitación</span><br></br>
+                <span>Telemed</span><br>
+              </p>
+            </th>
+            <th>
+              <p class="text-center">
+                <span>Teléfono</span><br></br>
+                <span>4342212323</span><br>
+              </p>
+            </th>
+            <th>
+              <p class="text-center">
+                <span>Dirección</span><br></br>
+                <span>Av. Whats</span><br>
+              </p>
+            </th>
+          </tr>
+        </thead>
+      </table>
+      <table class="table table-bordered tabla-datos-paciente">
+        <thead>
+          <tr>
+            <th>Nombre del paciente</th>
+            <th>Edad</th>
+            <th>Identificación</th>
+            <th>Sexo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Ricardo Ariza</th>
+            <td>45 años</td>
+            <td>40.871.478</td>
+            <td>@Masculino</td>
+          </tr>
+          <tr>
+            <th width="30%"><strong>Diagnostico</strong></th>
+            <td width="70%" colspan="3">
+              <p>gripe</p>
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+      <table class="table table-bordered tabla-datos-receta">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Detalle</th>
+            <th>Cantidad</th>
+            <th>Dosis</th>
+            <th>Notas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Paracetamol 325 mg</td>
+            <td>10 Dosis</td>
+            <td>1 Cada 8 horas</td>
+            <td>Vía Oral</td>
+          </tr>
+          
+      
+        </tbody>
+      </table>
+      <table class="table table-condensed tabla-firma">
+        <tbody>
+          <tr>
+            <td align="center">
+              <img src="images/firma_medico.png" style="margin: 0 auto;" alt="DrCLick">
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <b style="font-weight: bold;">Dr. Alberto Pantoja</b>
+            </td>
+          </tr>
+          <tr>
+            <td align="center"><span style="font-weight: 300;">No. Exequatur 108-21</span></td>
+          </tr>
+          <tr>
+            <td align="center"><span style="font-weight: 300;">Médico General</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+  </body>
+</html>
